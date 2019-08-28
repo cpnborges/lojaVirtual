@@ -6,43 +6,61 @@
      background: antiquewhite;
  }
 
- .titulo{
-    color: black;
+ .titulo {
+     color: black;
      text-align: center;
      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-     font-size: 60px;
+     font-size: 55px;
  }
 
- .img-carrousel{
-     width: 600px;
-     margin-left: auto;
-     margin-right: auto;
-     display: block;
- }
-
- #menu{
+  #menu {
      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
      text-decoration-color: black;
      text-align: center;
-     font-size: 40px;
+     font-size: 35px;
  }
 
- #navlink{
+ #navlink {
      color: white;
      text-decoration: none;
  }
 
- #legenda{
+ #legenda {
      text-decoration: none;
      color: darkorange;
  }
 
- li{
-    list-style-type: none;
-    text-decoration: none;
+ li {
+     list-style-type: none;
+     text-decoration: none;
  }
 
- #navbarDropdown{
-    color: white;
-    text-decoration: none;
+ #navbarDropdown {
+     color: white;
+     text-decoration: none;
+ }
+
+ #foot {
+     background: gray;
+ }
+
+ p.foot {
+     color: white;
+     text-align: center;
+ }
+
+ .card-title {
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+ }
+
+ #carrinho {
+     width: 30px;
+ }
+
+ .img-fluid{
+     max-width: 550px;
+     height: auto;
+     margin-left: auto;
+     margin-right: auto;
+     display: block;
  }

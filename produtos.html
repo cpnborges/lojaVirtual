@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
     <title>Loja Virtual</title>
@@ -15,42 +14,82 @@
 
 <body>
     <h1 class="titulo">Produtos</h1>
-    <nav id="menu" class="navbar navbar-dark bg-dark">
-        <a id="navlink" href="index.html">Home</a>
-        <a id="navlink" href="index.html">Quem Somos</a>
-        <li id="navlink" class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Produtos
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a class="dropdown-item" href="produtos.html">Eletroeletrônicos</a>
-                <a class="dropdown-item" href="produtos.html">Cosméticos</a>
-                <a class="dropdown-item" href="produtos.html">Maquiagem</a>
-                <a class="dropdown-item" href="produtos.html">Acessórios</a>
+    <div class="container">
+        <nav id="menu" class="navbar navbar-dark bg-dark">
+            <a id="navlink" href="index.html">Home</a>
+            <a id="navlink" href="index.html">Quem Somos</a>
+            <li id="navlink" class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Produtos
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="eletroeletronicos.html">Eletroeletrônicos</a>
+                    <a class="dropdown-item" href="produtos.html">Cosméticos</a>
+                    <a class="dropdown-item" href="produtos.html">Maquiagem</a>
+                    <a class="dropdown-item" href="produtos.html">Acessórios</a>
+                </div>
+            </li>
+            <a id="navlink" href="index.html">Contato</a>
+            <a class="navbar-brand" href="#"><img id="carrinho"
+                    src="images/depositphotos_118514950-stock-illustration-shopping-cart-market-store-buy.jpg"></a>
+            <div>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
+                    <button class="btn btn-light my-2 my-sm-0" type="submit">Buscar</button>
             </div>
-        </li>
-        <a id="navlink" href="index.html">Contato</a>
-        <div>
-            <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" type="search" placeholder="Buscar" aria-label="Search">
-                <button class="btn btn-light my-2 my-sm-0" type="submit">Buscar</button>
-        </div>
+    </div>
     </nav>
-    <footer>
+    <br>
+    <div class="card-deck">
+        <div class="card">
+            <img src="images/apple-iphone-smartphone-desk.jpg" class="card-img-top" alt="Macbook Ipad Iphone">
+            <div class="card-body">
+                <h5 class="card-title">Promoção</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque doloribus voluptatem
+                    voluptatum repellat tempore.</p>
+                <p>R$ 20.000,00</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Válido até durarem os estoques</small>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/pexels-photo-2533266.jpeg" class="card-img-top" alt="Maquiagem">
+            <div class="card-body">
+                <h5 class="card-title">Imperdível</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque doloribus voluptatem
+                    voluptatum repellat tempore.</p>
+                <p>A partir de R$ 15,00</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Válido até durarem os estoques</small>
+            </div>
+        </div>
+        <div class="card">
+            <img src="images/pexels-photo-2720447.jpeg" class="card-img-top" alt="creme hidratante">
+            <div class="card-body">
+                <h5 class="card-title">Liquidação</h5>
+                <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque doloribus voluptatem
+                    voluptatum repellat tempore.</p>
+                <p>A partir de R$ 5,00</p>
+            </div>
+            <div class="card-footer">
+                <small class="text-muted">Válido até durarem os estoques</small>
+            </div>
+        </div>
+    </div>
 
+    <br>
+    <footer>
+        <div id="foot" class="container">
+            <p class="foot">Desenvolvido por Carla</p>
+        </div>
     </footer>
 
-
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
 </body>
 
 </html>
